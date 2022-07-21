@@ -1,0 +1,12 @@
+# Powershell CmdLets to Manage Exchange online mailboxes
+
+    # Connect to Exchange Online Powershell
+        -> Connect-ExchangeOnline
+    
+    # Exchange Mailbox Report
+        -> Get-ExoMailbox -ResultSize Unlimited
+
+    # Get Office 365 Mailbox Size
+        -> Get-ExoMailboxStatistics -Identity admin |select DisplayName, TotalItemSize
+
+    #
